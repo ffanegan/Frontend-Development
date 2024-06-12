@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sassy Calculations</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button class="num" onclick="appendToDisplay('6')">6</button>
+            <button class="num" onclick="appendToDisplay('7')">7</button>
+            <button class="num" onclick="appendToDisplay('8')">8</button>
+            <button class="num" onclick="appendToDisplay('9')">9</button>
+            <button class="num" onclick="appendToDisplay('2')">2</button>
+            <button class="num" onclick="appendToDisplay('3')">3</button>
+            <button class="num" onclick="appendToDisplay('4')">4</button>
+            <button class="num" onclick="appendToDisplay('5')">5</button>
+            <button class="num" onclick="appendToDisplay('1')">1</button>
+            <button style="width: 100px;" class="num" onclick="appendToDisplay('0')">0</button>
+            <button class="num" onclick="appendToDisplay('.')">.</button>
+            <br>
+            <button class="opp" onclick="appendToDisplay('/')">÷</button>
+            <button class="opp" onclick="appendToDisplay('*')">•</button>
+            <button class="opp" onclick="appendToDisplay('-')">-</button>
+            <button class="opp" onclick="appendToDisplay('+')">+</button>
+            <button id="clearFunc" onclick="clearDisplay()">C</button>
+            <button id="euqFunc" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
