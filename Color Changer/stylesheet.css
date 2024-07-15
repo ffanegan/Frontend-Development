@@ -1,0 +1,47 @@
+.title{
+    text-align: center;
+    font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
+    text-shadow: 0 0 3px #c1c1c1;
+    margin-top: 50px;
+    font-size: 5vmin;
+    border-radius: 30px;
+    border-color: #0000;
+    border: double;
+    border-width: 0.3cm;
+}
+
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+#button_main {
+    align-items: center;
+    background-color: rgb(100, 100, 100);
+    margin: 2vmin;
+    padding: 20px;
+    font-size: large;
+    border: none;
+    border-radius: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    box-shadow: 5px 3px 5px rgba(94, 94, 94, 0.582);
+}
+#button_main:hover{
+    background-color: rgb(127, 127, 127);
+}
+
+#button_main:active{
+    background-color: rgb(72, 72, 72);
+}
+
+fieldset {
+    text-shadow: 1px 1px 10px #380808ab, 1px 1px 1px #c1c1c1;
+    color: beige;
+    border-color: black;
+    justify-content: center;
+    font-family: Tahoma, sans-serif;
+    border: none;
+    text-align: center;
+}
