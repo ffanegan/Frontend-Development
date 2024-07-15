@@ -1,0 +1,96 @@
+
+body{
+    background-color: rgb(253, 243, 190);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.cell{
+    width: 115px; 
+    height: 115px;
+    border: 1px solid;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Permanent Marker", "Dosis", Courier, monospace;
+    /*box-shadow: 0 0 0 0px;*/
+    line-height: 75px;
+    font-size: 130px;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#header{
+    animation: 3s, ease-in, 1s, 1, reverse, both, running, forwards;
+    color: rgb(24, 8, 8);
+    text-align: center;
+    font-family: "Tiny5", sans-serif;
+    justify-content: space-around;
+    font-size: 4rem;
+}
+
+#gameContainer{
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#cellContainer{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 70vh; /**/
+    width: 70vh;
+    grid-template-columns: repeat(3, 0fr);
+    display: grid;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    margin: 2em auto;
+    background-color: rgb(222, 195, 95);
+    border-radius: 25px;
+    border: solid, 5px, saddlebrown;
+    gap: 15px;
+}
+
+
+/*Restart Button*/
+
+#restartBtn{
+    font-family: "Dosis", Courier, monospace;
+    background-origin: padding-box;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    text-size-adjust: 3rem;
+    text-align: center;
+    background-color: rgb(128, 40, 0);
+    text-decoration: solid;
+    color: rgb(250, 244, 179);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+
+}
+#restartBtn:hover{
+    cursor: pointer;
+    background-color: rgb(77, 31, 10);
+}
+
+#statusText{
+    font-family: "Dosis", Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
