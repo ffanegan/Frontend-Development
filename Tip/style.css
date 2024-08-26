@@ -37,7 +37,7 @@ h1{
 }
 
 input{
-    font-family: sans-serif;
+    font-family: 'Comic Sans MS';
     size: 10px;
     padding: 10px;
     font-size: 20px;
@@ -51,6 +51,7 @@ button#go{
     background-color: rgb(120, 207, 135);
     padding: 3px;
     width: 100px;
+    height: 50px;
     font-family: 'Comic Sans MS';
 }
 
@@ -71,20 +72,23 @@ button#reset:hover{
     background-color: rgb(253, 253, 211);
 }
 
-input#display{
-    background-color: rgb(233, 233, 233);
-    cursor: default;
+input#tip{
+    display: inline;
+    width: 50px;
+    font-family: 'Comic Sans MS';
 }
 
 input#tip_display{
     background-color: rgb(233, 233, 233);
-    width: 50px;
+    width: 70px;
     cursor: default;
+    font-family: 'Comic Sans MS';
 }
 
-input#tip{
-    display: inline;
-    width: 50px;
+input#display{
+    background-color: rgb(233, 233, 233);
+    cursor: default;
+    font-family: 'Comic Sans MS';
 }
 
 .field{
