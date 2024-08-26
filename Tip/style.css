@@ -1,0 +1,100 @@
+body{
+    background-color: #4dac55;
+    text-align: center;
+    justify-content: right;  
+}
+
+h1{
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, Dosis;
+}
+
+#calculator{
+    display: inline;
+    text-align: center;
+    border-color: black;
+    justify-items: right;
+    border-width: 1rem;
+}
+
+#container{
+    justify-items: right;
+    display: inline-block;
+    background-color: antiquewhite;
+    border: 1px solid #552c2c;
+    border-width: 10px;
+    border-radius: 25px;
+    padding: 5px;
+    width: 300px, auto;
+    height: auto;
+    border-color: black;
+    /* max-width: 1000px; */
+    font-family: sans-serif;
+    size: 10px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+input{
+    font-family: sans-serif;
+    size: 10px;
+    padding: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+button#go{
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(120, 207, 135);
+    padding: 3px;
+    width: 100px;
+    font-family: 'Comic Sans MS';
+}
+
+button#go:hover{
+    background-color: rgb(157, 211, 166);
+}
+
+button#reset{
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 189);
+    padding: 3px;
+    width: 100px;
+    font-family: 'Comic Sans MS';
+}
+
+button#reset:hover{
+    background-color: rgb(253, 253, 211);
+}
+
+input#display{
+    background-color: rgb(233, 233, 233);
+    cursor: default;
+}
+
+input#tip_display{
+    background-color: rgb(233, 233, 233);
+    width: 50px;
+    cursor: default;
+}
+
+input#tip{
+    display: inline;
+    width: 50px;
+}
+
+.field{
+    font-family: 'Comic Sans MS', cursive, Dosis;
+    padding: 18px;
+    size: 10px;
+    overflow: hidden;
+}
+
+.mainLoginInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Comic Sans MS', cursive, Dosis;
+    opacity: 1; /* Firefox */
+  }
