@@ -1,0 +1,87 @@
+*{
+    font-family:"Dosis", "Nunito", "Poppins";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    font-family: Pangolin;
+    
+}
+body{
+    background-image: url("new-lab.png");
+    background-repeat: no-repeat;
+    background-repeat: fixed;
+    background-repeat: cover;
+}
+#title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#adam {
+    width: 60px;
+    height: 70px;
+}
+.container{
+    display: flex;
+    margin: 3cm;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+p{
+    font-family: Pangolin;
+    align-items: center;
+    color: #f2e890;
+    font-size: 100px;
+}
+h1{
+    color: #f2e890;
+    font-family: Pangolin;
+    font-size: 100px;
+}
+
+/* Click to add button properties*/
+#add{
+    background-color: #e7d428;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+#add:hover{
+    background-color: #cbb708;
+    cursor: pointer;
+}
+#add:active{
+    background-color: rgb(206, 200, 150);
+}
+
+/* Reset to add button properties*/
+#reset{
+    font-size: 30px;
+    background-color: #d4d2d2;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#reset:hover{
+    background-color: #adadad;
+    cursor: pointer;
+}
+#reset:active{
+    background-color: #dadada;
+    cursor: pointer;
+}
