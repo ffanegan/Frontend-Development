@@ -1,0 +1,160 @@
+body{
+    background-image: url("https://www.eatthis.com/wp-content/uploads/sites/4/2022/07/strawberries.jpg?quality=82&strip=1");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+nav{
+    flex: 2;
+    text-align: right;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+#first{
+    display: grid;
+    grid-template-areas: 
+            "b b a"
+            "b b c"
+            "b b c";
+    
+}
+
+.intro{
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    background-color: rgba(0, 0, 0, 0.539);
+
+    height: 500px;
+    z-index: 99;
+}
+
+.intro h1{
+    color: white;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0px;
+    font-size: 4rem;
+}
+
+
+.intro img{
+    width: 450px;
+    height: 220px;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+    image-orientation: flip;
+}
+
+.order{
+    display: block;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    background-color: rgba(0, 0, 0, 0.795);
+    align-items: center;
+    justify-content: right;
+
+    padding: 10px;
+    border-radius: 15px;
+    height: 600px;
+    width: 50%;
+}
+
+.logo{
+    font-family: 'Playwrite US Trad', cursive;
+    color: azure; text-align: center;
+    width: "40px";
+}
+
+.title{
+    padding-right: 10px;
+    font-family: 'Playwrite US Trad', cursive;
+    color: azure; text-align: center;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+p{
+    color: rgb(213, 213, 213);
+    justify-content: center;
+    text-align: right;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{ 
+    max-width: 50%;
+    padding: 50px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+    font-family:--bs-font-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.snapback {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+
+section {
+    display: inline-block;
+    background-color: beige;
+    text-align: center;
+    height: 5dvh;
+
+}

@@ -1,6 +1,6 @@
 .title{
     text-align: center;
-    font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-family: "Quicksand", Cambria, 'Segoe UI', Tahoma, Geneva, sans-serif;
     text-shadow: 0 0 3px #c1c1c1;
     margin-top: 50px;
     font-size: 5vmin;
@@ -23,13 +23,14 @@
     padding: 20px;
     font-size: large;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
     box-shadow: 5px 3px 5px rgba(94, 94, 94, 0.582);
 }
 #button_main:hover{
     background-color: rgb(127, 127, 127);
+    cursor: pointer;
 }
 
 #button_main:active{
@@ -37,11 +38,19 @@
 }
 
 fieldset {
-    text-shadow: 1px 1px 10px #380808ab, 1px 1px 1px #c1c1c1;
+    /* text-shadow: 1px 1px 10px #380808ab, 1px 1px 1px #c1c1c1; */
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    /* text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 black, 0 -1px black; */
     color: beige;
     border-color: black;
     justify-content: center;
     font-family: Tahoma, sans-serif;
     border: none;
     text-align: center;
+}
+
+iframe {
+    display: inline;
+    color: red;
+    
 }

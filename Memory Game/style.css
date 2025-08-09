@@ -1,0 +1,66 @@
+
+/* *, **::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* .container{
+    display: grid;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    background-color: red;
+    align-items: center;
+    padding: 40px 60px;
+
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Dosis", "Nunito", "Poppins";
+}
+
+
+h1{
+    margin: 20px;
+    padding: 20px;
+    font-family: "Nunisto";
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+}
+
+body{
+    background-color: #754a7a;
+    justify-content: center;
+    text-align: center;
+}
+
+.cell{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+
+
+} 
+
+/* .cell{
+
+}  */
+
+.reset{
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    border-width: 1vmin;
+    margin-top: 10px;
+    background: linear-gradient(rgb(255, 186, 186), rgb(211, 250, 187));
+
+    
+}
+
+.reset:hover{
+    background: linear-gradient(rgb(254, 215, 215), rgb(234, 253, 222));
+    cursor: pointer;
+}

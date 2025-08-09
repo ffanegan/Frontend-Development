@@ -44,7 +44,7 @@ h1{
     border-radius: 10px;
     cursor: pointer;
     color:rgb(255, 238, 218);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 #startBtn{

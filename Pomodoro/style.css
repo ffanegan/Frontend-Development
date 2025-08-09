@@ -1,0 +1,134 @@
+:root {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    --time: 4s;
+}
+
+body{
+    background: content-box radial-gradient(rgb(233, 66, 166), rgb(120, 23, 159, green));
+    justify-content: center;
+    align-items: center;
+}t
+
+h1{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 60px;
+    justify-content: center;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+}
+h1::before{
+    background-image: url("mojo.png");
+    background-size: auto;
+    max-width: 100%;
+    max-height:100%;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+div.containter {
+    display: inline;
+    border-width: 1rcap;
+    font-size: 20px;
+    font-size: 40px;
+    font-family: "Poetsen One", sans-serif;
+    padding: 20px;
+    border-color: cadetblue;
+    border-radius: 5px;
+}
+
+button{
+    font-size: 20px;
+    padding: 10px;
+    font-family: "SUSE", 'Segoe UI', 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+    border-radius: 20px;
+    border-width: 5px;
+    background-color: var(--background_color);
+}
+
+button#startBtn {
+    background-color: rgb(128, 247, 132);
+    transition: all 0.2s ease-in-out;
+}
+
+button#stopBtn {
+    background-color: rgb(223, 117, 117);
+    transition: all 0.2s ease-in-out;
+}
+button#resetBtn {
+    background-color: rgb(213, 221, 155);
+    transition: all 0.2s ease-in-out;
+}
+
+button#stopBtn:hover, button#resetBtn:hover, button#startBtn:hover {
+    background-color: rgba(244, 184, 184, 0.43); 
+    transition: all 0.2s ease-in-out;
+}
+
+#time_display{
+    font-size: 40px;
+    size: 60px;
+    font-family: "SUSE", 'Segoe UI', 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(rgb(180, 180, 180), rgb(255, 255, 255));
+    padding: 5px;
+    font-family: 'SUSE';
+    margin-top: 30px;
+    overflow: hidden;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+
+}
+.circular-progress {
+    --size: 250px;
+    --percentage: 100;
+    --half-size: calc(var(--size) / 2);
+    --stroke-width: 20px;
+    --radius: calc((var(--size) - var(--stroke-width)) / 2);
+    --circumference: calc(var(--radius) * pi * 2);
+    --dash: calc((var(--progress) * var(--circumference)) / 100);
+    animation: progress-animation var(--time) linear 0s 1 forwards;
+  }
+  
+  .circular-progress circle {
+    cx: var(--half-size);
+    cy: var(--half-size);
+    r: var(--radius);
+    stroke-width: var(--stroke-width);
+    fill: none;
+    stroke-linecap: round;
+  }
+  
+  .circular-progress circle.bg {
+    stroke: #d7d7d7;
+  }
+  
+  .circular-progress circle.fg {
+    transform: rotate(-90deg);
+    transform-origin: var(--half-size) var(--half-size);
+    stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+    transition: stroke-dasharray 0.3s linear 0s;
+    stroke: #5394fd;
+  }
+  
+  @property --progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  @keyframes progress-animation {
+    from {
+      --progress: 0;
+    }
+    to {
+      --progress: var(--percentage);
+    }
+  }

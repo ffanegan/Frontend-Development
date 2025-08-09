@@ -1,0 +1,96 @@
+*, **::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --border-radius: 1vmin;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    background-color: red;
+    align-items: center;
+    padding: 40px 60px;
+
+}
+
+h1{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-decoration: underline;
+    text-align: center;
+    align-items: center;
+    color: #FFFFF0;
+    text-shadow: 2px 2px 6px #6f6f6f;
+    font-family: "Nunito";
+}
+
+body {
+    background-color: rgb(199, 64, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0px;
+    font-size: 7.5vmin;
+}
+
+/* 
+#game-board{ */
+    /* --cell-size: 20vmin;
+    --grid-size: 4;
+    --cell-gap: 2vmin; */
+    /* display: grid;
+    grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+    grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+    background-color: lavenderblush;
+    gap: var(--cell-gap);
+    border-radius: var(--border-radius);
+    padding: var(--cell-gap);
+    position: relative;
+
+}
+
+.cell{
+    background-color: lavender;
+    border-radius: 1vmin;
+    padding: 2vmin;
+} */
+
+/* .tile { */
+    /* --x: 1;
+    --y: 1;
+    --background-lightness: 80%;
+    --text-lightness: 20%; */
+    /* position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: hsl(200, 50%, var(--background-lightness));
+    font-weight: bold;
+    color: hsl(200, 25%, var(--text-lightness));
+    border-radius: var(--border-radius);
+    top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+    left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+    animation: show 250ms ease-in-out;
+    transition: 100ms ease-in-out; */
+    /*Take the cell size and the cell gap and then mutilply by position and include  the border at the very end*/
+
+}
+
+@keyframes show{
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+
+}

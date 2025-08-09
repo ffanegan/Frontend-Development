@@ -17,8 +17,9 @@ function calculate(){
     try{
         total_value = bill + ((bill*10) * x)/10;
     }
-    catch(NaN){
+    catch($NaN){
         document.getElementById("display").value = "Error";
     }
     document.getElementById("display").value = `$${total_value.toFixed(2)}`;
+    console.log(x)
 }

@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    height: 100vh; 
+    background: radial-gradient(black, rgb(28, 7, 47));
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+    font-family: 'Dosis', Courier, monospace;
+    transition: 100ms ease-in-out;
+    /* padding: 10px; */
+}
+
+p{
+    font-family: 'Dosis', Courier, monospace;
+    text-align: center;
+    color: bisque;
+    transition: 100ms ease-in-out;
+    text-shadow: 1ch;
+}
+#board{
+    /* background-color: blue; */
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    gap: 10px;
+    size-adjust: 20px;
+    padding: 20px;
+
+}
+
+/*#selection{
+    justify-content: center;
+    background-color: aqua;
+    display: flex;
+
+}*/
+
+.square{
+    padding: 50px;
+    size: 20px;
+    border-radius: 5px;
+    border: none;
+    animation: show 250ms ease-in-out;
+    transition: 200ms ease-in-out; 
+}
+
+
+
+.square:hover{
+    background: linear-gradient(grey, white);
+}
+
+
+.square:active{
+    background: linear-gradient(grey, rgb(136, 135, 135));;
+} 
+
+
+@keyframes show{
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+

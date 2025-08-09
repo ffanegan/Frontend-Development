@@ -1,0 +1,254 @@
+bitmaps
+  instruction1
+  instruction2
+  attention_test
+  missed
+  fixpoint
+  end_screen
+  question_speed_pace 
+  question_term_period  
+  question_town_city   
+  question_route_path    
+  question_infant_baby     
+  question_winter_plate     
+  question_car_sun       
+  question_photo_lake        
+  question_wheel_cow
+  question_sky_towel   
+  speed_pace
+  term_period
+  town_city
+  infant_baby 
+  winter_plate 
+  car_sun
+  photo_lake
+  wheel_cow
+  sky_towel
+  lady_woman
+  sea_ocean
+  pencil_corn
+  path_route
+  jacket_bottle
+
+fonts
+  arial 20
+
+# table: write condition,stimulus,response
+
+table mem
+  "speed_pace"    speed_pace    1
+  "term_period"   term_period   1 
+  "town_city"     town_city     1
+  "infant_baby"   infant_baby   1
+  "winter_plate"  winter_plate  2
+  "car_sun"       car_sun       2
+  "photo_lake"    photo_lake    2
+  "wheel_cow"     wheel_cow     2
+  "sky_towel"     sky_towel     2
+  "lady_woman"    lady_woman    1
+  "sea_ocean"     sea_ocean     1
+  "pencil_corn"   pencil_corn   2
+  "path_route"    path_route    1 
+  "jacket_bottle" jacket_bottle 2
+
+table questions
+  "question_speed_pace"   question_speed_pace   4
+  "question_term_period"  question_term_period  1
+  "question_town_city"    question_town_city    2
+  "question_route_path"   question_route_path   3    
+  "question_infant_baby"  question_infant_baby  2     
+  "question_winter_plate" question_winter_plate 3     
+  "question_car_sun"      question_car_sun      4       
+  "question_photo_lake"   question_photo_lake   1       
+  "question_wheel_cow"    question_wheel_cow    2
+  "question_sky_towel"    question_sky_towel    4
+  
+#start task
+
+task mem
+  table mem
+  keys 1 2 #use keys 1 and 2 
+  show bitmap fixpoint #show fixation cross
+  delay 2000 # show for 2 seconds
+  clear 1
+  delay 1000
+  show bitmap @2 #stimulus 2
+  readkey @3 2000
+  clear 2
+  if STATUS != CORRECT # if correct button was not pressed or slow
+    show bitmap missed 
+    delay 3000
+    clear 3
+  fi
+  delay 500
+  save BLOCKNAME @1 TABLEROW KEY STATUS RT # save data
+
+
+
+task questions
+  table questions
+  keys 1 2 3 4
+  show bitmap fixpoint #show fixation cross
+  delay 2000 # show for 2 seconds
+  clear 1
+  delay 1000
+  show bitmap @2 #stimulus 2
+  readkey @3 3000 # 3 sec response time
+  clear 2
+  if STATUS != CORRECT # if correct button was not pressed or slow
+    show bitmap missed 
+    delay 2000
+    clear 3
+  fi
+  delay 500
+  save BLOCKNAME @1 TABLEROW KEY STATUS RT # save data
+
+
+block training
+  message instruction1
+  task mem 14 fixed
+  message instruction2
+  task questions 10 fixed
+end
+message end_screen
+
+
+---
+bitmaps
+  instruction1
+  instruction2
+  attention_test
+  missed
+  fixpoint
+  end_screen
+  question_speed_pace 
+  question_term_period  
+  question_town_city   
+  question_route_path    
+  question_infant_baby     
+  question_winter_plate     
+  question_car_sun       
+  question_photo_lake        
+  question_wheel_cow
+  question_sky_towel   
+  speed_pace
+  term_period
+  town_city
+  infant_baby 
+  winter_plate 
+  car_sun
+  photo_lake
+  wheel_cow
+  sky_towel
+  lady_woman
+  sea_ocean
+  pencil_corn
+  path_route
+  jacket_bottle
+
+fonts
+  arial 20
+
+# table: write condition,stimulus,response
+
+table mem
+  "speed_pace"    speed_pace    1
+  "term_period"   term_period   1 
+  "town_city"     town_city     1
+  "infant_baby"   infant_baby   1
+  "winter_plate"  winter_plate  2
+  "car_sun"       car_sun       2
+  "photo_lake"    photo_lake    2
+  "wheel_cow"     wheel_cow     2
+  "sky_towel"     sky_towel     2
+  "lady_woman"    lady_woman    1
+  "sea_ocean"     sea_ocean     1
+  "pencil_corn"   pencil_corn   2
+  "path_route"    path_route    1 
+  "jacket_bottle" jacket_bottle 2
+
+table questions
+  "question_speed_pace"   question_speed_pace   4
+  "question_term_period"  question_term_period  1
+  "question_town_city"    question_town_city    2
+  "question_route_path"   question_route_path   3    
+  "question_infant_baby"  question_infant_baby  2     
+  "question_winter_plate" question_winter_plate 3     
+  "question_car_sun"      question_car_sun      4       
+  "question_photo_lake"   question_photo_lake   1       
+  "question_wheel_cow"    question_wheel_cow    2
+  "question_sky_towel"    question_sky_towel    4
+ 
+table attention
+  "attention_test"   attention_test  3
+
+#start task
+
+task mem
+  table mem
+  keys 1 2 #use keys 1 and 2 
+  show bitmap fixpoint #show fixation cross
+  delay 500 
+  clear 1
+  show bitmap @2 #stimulus 2
+  readkey @3 1500
+  clear 2
+  if STATUS != CORRECT # if correct button was not pressed or slow
+    show bitmap missed 
+  delay 500
+  fi
+  clear 3
+  save BLOCKNAME @1 TABLEROW KEY STATUS RT # save data
+
+task questions
+  table questions
+  keys 1 2 3 4
+  show bitmap fixpoint #show fixation cross
+  delay 500 
+  clear 1
+  show bitmap @2 #stimulus 2
+  readkey @3 5000 # 5 sec response time
+  clear 2
+  if STATUS != CORRECT # if correct button was not pressed or slow
+    show bitmap missed 
+    delay 500
+    clear 3
+  fi
+  delay 500
+  save BLOCKNAME @1 TABLEROW KEY STATUS RT # save data
+
+task attention
+  table attention
+  keys 1 2 3 4
+  show bitmap @2
+  readkey @3 10000
+  clear 1
+  show bitmap fixpoint #show fixation cross
+  delay 500
+  if STATUS != CORRECT # if correct button was not pressed or slow
+    show bitmap end_screen 
+    delay 1000
+    clear 2
+    end experiment
+  fi
+  save BLOCKNAME @1 TABLEROW KEY STATUS RT # save data
+
+
+block test
+   message instruction1 
+   tasklist
+      mem 14 no_repeat
+end
+
+block trial
+   tasklist
+   attention 1
+end
+
+block trail
+   message instruction2
+   task questions 10 no_repeat
+   message end_screen
+end
+
+
